@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- displays site properly based on user's device -->
+
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@400,600,700&display=swap">
+      <title>Frontend Mentor | Social links profile</title>
+
+      <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+      <style>
+            :root {
+                  --Desktop: 1440px;
+                  /* color */
+                  --Green: hsl(75, 94%, 57%);
+                  /* ### Neutral */
+
+                  --White: hsl(0, 0%, 100%);
+                  --Grey: hsl(0, 0%, 20%);
+                  --Dark-Grey: hsl(0, 0%, 12%);
+                  --Off-Black: hsl(0, 0%, 8%);
+            }
+
+            * {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+                  text-decoration: none;
+            }
+
+            body {
+                  width: 100vw;
+                  height: 100vh;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  background: var(--Black, #141414);
+                  font-size: 14px;
+                  font-family: "Inter", sans-serif;
+                  font-optical-sizing: auto;
+                  font-weight: bold;
+                  font-style: normal;
+
+            }
+
+            .card {
+                  display: flex;
+                  width: 384px;
+                  padding: 40px;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 24px;
+                  flex-shrink: 0;
+
+                  border-radius: 12px;
+                  background: var(--Dark-Grey, #1F1F1F);
+            }
+
+            .photo {
+                  width: 88px;
+                  height: 88px;
+                  border-radius: 999px;
+            }
+
+            .name-location {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 4px;
+                  align-self: stretch;
+            }
+
+            .name {
+                  align-self: stretch;
+                  color: var(--White, var(--White, #FFF));
+                  text-align: center;
+                  font-size: 24px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 150%;
+                  /* 36px */
+            }
+
+            .location {
+                  align-self: stretch;
+                  color: var(--Neon-Green, var(--Neon-Green, #C4F82A));
+                  text-align: center;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 150%;
+                  /* 21px */
+            }
+
+            .bio {
+                  align-self: stretch;
+                  color: var(--White, var(--White, #FFF));
+                  text-align: center;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 150%;
+                  /* 21px */
+            }
+
+            .social {
+
+                  display: flex;
+                  width: 100%;
+            }
+
+            .social ul {
+                  display: flex;
+                  width: 100%;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 16px;
+                  align-self: stretch;
+            }
+
+            .social ul li {
+                  display: flex;
+
+                  padding: 12px;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 8px;
+                  align-self: stretch;
+                  border-radius: 8px;
+                  background: var(--Grey, #333);
+            }
+
+            .social ul li:hover {
+                  background: var(--Neon-Green, #C4F82A);
+
+                  a {
+                        color: var(--Grey, var(--Grey, #333));
+                  }
+            }
+
+            .social ul li a {
+                  color: var(--White, var(--White, #FFF));
+
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 150%;
+                  /* 21px */
+            }
+      </style>
+</head>
+
+<body>
+
+      <div class="card">
+            <img src="assets/images/avatar-jessica.jpeg" alt="" class="photo">
+            <div class="name-location">
+                  <h2 class="name">Jessica Randall</h2>
+                  <h3 class="location">London, United Kingdom</h3>
+            </div>
+            <p class="bio">"Front-end developer and avid reader."</p>
+            <nav class="social">
+                  <ul>
+                        <li>
+                              <a href="https://github.com"> GitHub</a>
+                        </li>
+                        <li>
+                              <a href="https://www.frontendmentor.io"> Frontend Mentor</a>
+                        </li>
+                        <li>
+                              <a href="https://www.linkedin.com"> LinkedIn</a>
+                        </li>
+                        <li>
+                              <a href="https://twitter.com"> Twitter</a>
+                        </li>
+                        <li>
+                              <a href="https://www.instagram.com"> Instagram</a>
+                        </li>
+                  </ul>
+
+            </nav>
+      </div>
+
+</body>
+
+</html>
